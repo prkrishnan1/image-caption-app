@@ -1,0 +1,29 @@
+srun: error: ioctl(TIOCGWINSZ): Inappropriate ioctl for device
+srun: error: Not using a pseudo-terminal, disregarding --pty option
+I1215 01:02:47.304098 1346603 pinned_memory_manager.cc:277] "Pinned memory pool is created at '0x1554fe000000' with size 268435456"
+I1215 01:02:47.308110 1346603 cuda_memory_manager.cc:107] "CUDA memory pool is created on device 0 with size 67108864"
+I1215 01:02:47.362750 1346603 metrics.cc:877] "Collecting metrics for GPU 0: NVIDIA A100-SXM4-80GB"
+I1215 01:02:47.365541 1346603 metrics.cc:770] "Collecting CPU metrics"
+I1215 01:02:47.365741 1346603 tritonserver.cc:2598] 
++----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Option                           | Value                                                                                                                                                                                                           |
++----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| server_id                        | triton                                                                                                                                                                                                          |
+| server_version                   | 2.51.0                                                                                                                                                                                                          |
+| server_extensions                | classification sequence model_repository model_repository(unload_dependents) schedule_policy model_configuration system_shared_memory cuda_shared_memory binary_tensor_data parameters statistics trace logging |
+| model_repository_path[0]         | /workspace/cocodatasetnew/cocodataset/models                                                                                                                                                                    |
+| model_control_mode               | MODE_NONE                                                                                                                                                                                                       |
+| strict_model_config              | 0                                                                                                                                                                                                               |
+| model_config_name                |                                                                                                                                                                                                                 |
+| rate_limit                       | OFF                                                                                                                                                                                                             |
+| pinned_memory_pool_byte_size     | 268435456                                                                                                                                                                                                       |
+| cuda_memory_pool_byte_size{0}    | 67108864                                                                                                                                                                                                        |
+| min_supported_compute_capability | 6.0                                                                                                                                                                                                             |
+| strict_readiness                 | 1                                                                                                                                                                                                               |
+| exit_timeout                     | 30                                                                                                                                                                                                              |
+| cache_enabled                    | 0                                                                                                                                                                                                               |
++----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+I1215 01:02:47.365825 1346603 server.cc:302] "No server context available. Exiting immediately."
+error: creating server: Internal - failed to stat file /workspace/cocodatasetnew/cocodataset/models
+srun: error: gpu002: task 0: Exited with exit code 1
