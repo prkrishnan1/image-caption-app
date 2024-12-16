@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload and Display Image</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+    }
+    #imageDisplay {
+      margin-top: 20px;
+      max-width: 100%;
+      max-height: 400px;
+    }
+    input[type="file"] {
+      margin-top: 20px;
+    }
+    .image-container {
+      display: flex;
+      flex-direction: column; /* Align items vertically */
+      justify-content: center;
+      align-items: center;
+      text-align: center; /* Center text and content */
+      margin-top: 20px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 8px 16px;
+      cursor: pointer;
+    }
+
+    /* Loading spinner styles */
+    .spinner {
+      border: 4px solid #f3f3f3; /* Light grey */
+      border-top: 4px solid #3498db; /* Blue */
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+      display: none; /* Initially hidden */
+      margin-top: 20px;
+    }
+
+    /* Animation for the spinner */
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Image Caption Generator</h2>
+
+  <!-- Form to upload image -->
+  <form action="/upload" method="POST" enctype="multipart/form-data">
+    <input type="file" name="file" accept="image/*" required>
+    <button type="submit">Upload</button>
+  </form>
+
+  {% if filename %}
+    <!-- Container for image, button, and caption -->
+    <div class="image-container">
+      <!-- Display the uploaded image -->
+      <img id="imageDisplay" src="{{ url_for('static', filename='uploads/' + filename) }}" alt="Uploaded Image">
+      
+      <!-- Create Caption Button -->
+      <button id="createCaptionButton">Create Caption</button>
+
+      <!-- Loading Spinner -->
+      <div id="loadingSpinner" class="spinner"></div>
+
+      <!-- Display the caption -->
+      <div class="caption-container" id="captionContainer"></div>
+    </div>
+
+  {% endif %}
+
+  <!-- JavaScript for handling the button click -->
+  <script>
+    // Get the button, caption container, and loading spinner
+    const createCaptionButton = document.getElementById('createCaptionButton');
+    const captionContainer = document.getElementById('captionContainer');
+    const loadingSpinner = document.getElementById('loadingSpinner');
+
+    // Attach an event listener to the button
+    createCaptionButton.addEventListener('click', function() {
+      // Hide the button when it's clicked
+      createCaptionButton.style.display = 'none';
+      
+      // Show the loading spinner when the button is clicked
+      loadingSpinner.style.display = 'block';
+      
+      // Make an AJAX request to generate the caption
+      fetch('/generate_caption', {
+        method: 'POST'
+      })
+      .then(response => response.json())
+      .then(data => {
+        // Hide the loading spinner after the response is received
+        loadingSpinner.style.display = 'none';
+
+        // Display the generated caption in the caption container
+        if (data.caption) {
+          captionContainer.innerHTML = `<p><strong>Caption:</strong> ${data.caption}</p>`;
+        } else {
+          captionContainer.innerHTML = `<p>Error: ${data.error}</p>`;
+        }
+      })
+      .catch(error => {
+        // Hide the spinner in case of an error
+        loadingSpinner.style.display = 'none';
+        console.error('Error generating caption:', error);
+      });
+    });
+  </script>
+
+</body>
+</html>

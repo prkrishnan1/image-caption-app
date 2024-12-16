@@ -1,0 +1,183 @@
+INFO:__main__:Image Shape: (1, 427, 640, 3)
+INFO:__main__:Image Shape: (1, 427, 640, 3)
+INFO:__main__:Triton Inference Response Using Trained Model: 
+INFO:__main__:[b'a snowboarder in the air']
+INFO:__main__:Local Base Model Inference Response: 
+INFO:__main__:a snowboarder in the air
+2024-12-14 17:44:36,919 Image Shape: (1, 427, 640, 3)
+2024-12-14 17:44:43,291 Triton Inference Response Using Trained Model: 
+2024-12-14 17:44:43,292 [b'a snowboarder in the air']
+2024-12-14 17:45:10,364 Local Base Model Inference Response: 
+2024-12-14 17:45:10,366 a snowboarder in the air
+2024-12-14 18:19:11,461 Image Shape: (1, 427, 640, 3)
+2024-12-14 18:19:15,508 Triton Inference Response Using Trained Model: 
+2024-12-14 18:19:15,509 [b'a snowboarder in the air']
+2024-12-14 18:19:42,826 Local Base Model Inference Response: 
+2024-12-14 18:19:42,828 a snowboarder in the air
+2024-12-14 18:21:42,784 Image Shape: (1, 427, 640, 3)
+2024-12-14 18:21:44,103 Triton Inference Response Using Trained Model: 
+2024-12-14 18:21:44,103 [b'a snowboarder in the air']
+2024-12-14 18:22:00,472 Local Base Model Inference Response: 
+2024-12-14 18:22:00,473 a snowboarder in the air
+2024-12-14 23:56:10,914 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-14 23:56:10,917 [33mPress CTRL+C to quit[0m
+2024-12-14 23:56:10,929  * Restarting with stat
+2024-12-14 23:56:48,000  * Debugger is active!
+2024-12-14 23:56:48,004  * Debugger PIN: 198-581-754
+2024-12-14 23:57:12,757 127.0.0.1 - - [14/Dec/2024 23:57:12] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+2024-12-14 23:57:13,057 127.0.0.1 - - [14/Dec/2024 23:57:13] "GET /upload?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-12-14 23:57:13,061 127.0.0.1 - - [14/Dec/2024 23:57:13] "GET /upload?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-12-14 23:57:13,348 127.0.0.1 - - [14/Dec/2024 23:57:13] "GET /upload?__debugger__=yes&cmd=resource&f=console.png&s=XUIalNckT61OFtrRjdY2 HTTP/1.1" 200 -
+2024-12-14 23:57:13,609 127.0.0.1 - - [14/Dec/2024 23:57:13] "GET /upload?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-12-14 23:57:15,447 127.0.0.1 - - [14/Dec/2024 23:57:15] "GET / HTTP/1.1" 200 -
+2024-12-14 23:57:31,796 127.0.0.1 - - [14/Dec/2024 23:57:31] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+2024-12-14 23:57:32,117 127.0.0.1 - - [14/Dec/2024 23:57:32] "[36mGET /upload?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-12-14 23:57:32,141 127.0.0.1 - - [14/Dec/2024 23:57:32] "[36mGET /upload?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-12-14 23:57:32,460 127.0.0.1 - - [14/Dec/2024 23:57:32] "[36mGET /upload?__debugger__=yes&cmd=resource&f=console.png&s=XUIalNckT61OFtrRjdY2 HTTP/1.1[0m" 304 -
+2024-12-14 23:58:57,514 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-14 23:58:57,514 [33mPress CTRL+C to quit[0m
+2024-12-14 23:58:57,522  * Restarting with stat
+2024-12-14 23:59:14,874  * Debugger is active!
+2024-12-14 23:59:14,874  * Debugger PIN: 198-581-754
+2024-12-14 23:59:20,257 127.0.0.1 - - [14/Dec/2024 23:59:20] "GET / HTTP/1.1" 200 -
+2024-12-14 23:59:52,094 127.0.0.1 - - [14/Dec/2024 23:59:52] "POST /upload HTTP/1.1" 200 -
+2024-12-14 23:59:52,400 127.0.0.1 - - [14/Dec/2024 23:59:52] "[33mGET /static/uploads/Screenshot%202024-12-11%20at%203.41.24%20PM%20(2).png HTTP/1.1[0m" 404 -
+2024-12-14 23:59:56,045 Image Shape: (1, 1440, 3440, 4)
+2024-12-15 00:00:12,677 Triton Inference Response Using Trained Model: 
+2024-12-15 00:00:12,677 [b'the system of the operating system']
+2024-12-15 00:00:12,805 127.0.0.1 - - [15/Dec/2024 00:00:12] "[35m[1mPOST /generate_caption HTTP/1.1[0m" 500 -
+2024-12-15 00:02:19,354  * Detected change in '/lustre/fs0/scratch/krishp20/imagecaptionapp/src/predictor.py', reloading
+2024-12-15 00:02:20,212  * Restarting with stat
+2024-12-15 00:02:36,629  * Debugger is active!
+2024-12-15 00:02:36,629  * Debugger PIN: 198-581-754
+2024-12-15 00:02:41,755 127.0.0.1 - - [15/Dec/2024 00:02:41] "GET / HTTP/1.1" 200 -
+2024-12-15 00:02:57,751 127.0.0.1 - - [15/Dec/2024 00:02:57] "POST /upload HTTP/1.1" 200 -
+2024-12-15 00:02:58,052 127.0.0.1 - - [15/Dec/2024 00:02:58] "[33mGET /static/uploads/Screenshot%202024-12-11%20at%203.41.24%20PM%20(2).png HTTP/1.1[0m" 404 -
+2024-12-15 00:03:00,194 Image Shape: (1, 1440, 3440, 4)
+2024-12-15 00:03:04,261 Triton Inference Response Using Trained Model: 
+2024-12-15 00:03:04,261 b'the system of the operating system'
+2024-12-15 00:03:04,282 127.0.0.1 - - [15/Dec/2024 00:03:04] "[35m[1mPOST /generate_caption HTTP/1.1[0m" 500 -
+2024-12-15 00:04:00,007  * Detected change in '/lustre/fs0/scratch/krishp20/imagecaptionapp/src/predictor.py', reloading
+2024-12-15 00:04:00,571  * Restarting with stat
+2024-12-15 00:04:18,143  * Debugger is active!
+2024-12-15 00:04:18,143  * Debugger PIN: 198-581-754
+2024-12-15 00:04:27,706 127.0.0.1 - - [15/Dec/2024 00:04:27] "GET / HTTP/1.1" 200 -
+2024-12-15 00:04:40,394 127.0.0.1 - - [15/Dec/2024 00:04:40] "POST /upload HTTP/1.1" 200 -
+2024-12-15 00:04:40,688 127.0.0.1 - - [15/Dec/2024 00:04:40] "[33mGET /static/uploads/Screenshot%202024-12-11%20at%203.41.24%20PM%20(2).png HTTP/1.1[0m" 404 -
+2024-12-15 00:04:42,447 Image Shape: (1, 1440, 3440, 4)
+2024-12-15 00:04:44,210 Triton Inference Response Using Trained Model: 
+2024-12-15 00:04:44,210 the system of the operating system
+2024-12-15 00:04:44,213 127.0.0.1 - - [15/Dec/2024 00:04:44] "POST /generate_caption HTTP/1.1" 200 -
+2024-12-15 00:15:43,862 127.0.0.1 - - [15/Dec/2024 00:15:43] "GET / HTTP/1.1" 200 -
+2024-12-15 00:15:57,748 127.0.0.1 - - [15/Dec/2024 00:15:57] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+2024-12-15 00:15:58,048 127.0.0.1 - - [15/Dec/2024 00:15:58] "[36mGET /upload?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-12-15 00:15:58,050 127.0.0.1 - - [15/Dec/2024 00:15:58] "[36mGET /upload?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-12-15 00:15:58,316 127.0.0.1 - - [15/Dec/2024 00:15:58] "GET /upload?__debugger__=yes&cmd=resource&f=console.png&s=TaiHJTGKkG3nclEFZuES HTTP/1.1" 200 -
+2024-12-15 00:15:58,581 127.0.0.1 - - [15/Dec/2024 00:15:58] "[36mGET /upload?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-12-15 00:16:30,991  * Detected change in '/lustre/fs0/scratch/krishp20/imagecaptionapp/src/app.py', reloading
+2024-12-15 00:16:33,502  * Restarting with stat
+2024-12-15 00:17:10,217  * Debugger is active!
+2024-12-15 00:17:10,218  * Debugger PIN: 198-581-754
+2024-12-15 00:17:15,668 127.0.0.1 - - [15/Dec/2024 00:17:15] "GET /home HTTP/1.1" 200 -
+2024-12-15 00:18:19,704 127.0.0.1 - - [15/Dec/2024 00:18:19] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+2024-12-15 00:18:20,029 127.0.0.1 - - [15/Dec/2024 00:18:20] "[36mGET /upload?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-12-15 00:18:20,033 127.0.0.1 - - [15/Dec/2024 00:18:20] "[36mGET /upload?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-12-15 00:18:20,311 127.0.0.1 - - [15/Dec/2024 00:18:20] "GET /upload?__debugger__=yes&cmd=resource&f=console.png&s=XQgYTHVpIOlnDvGizu4u HTTP/1.1" 200 -
+2024-12-15 19:05:29,997 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-15 19:05:30,002 [33mPress CTRL+C to quit[0m
+2024-12-15 19:05:30,013  * Restarting with stat
+2024-12-15 19:05:46,657  * Debugger is active!
+2024-12-15 19:05:46,658  * Debugger PIN: 198-581-754
+2024-12-15 19:05:51,840 127.0.0.1 - - [15/Dec/2024 19:05:51] "GET / HTTP/1.1" 200 -
+2024-12-15 19:06:34,532 127.0.0.1 - - [15/Dec/2024 19:06:34] "POST /upload HTTP/1.1" 200 -
+2024-12-15 19:06:34,850 127.0.0.1 - - [15/Dec/2024 19:06:34] "[33mGET /static/uploads/Screenshot%202024-12-11%20at%203.41.24%20PM%20(2).png HTTP/1.1[0m" 404 -
+2024-12-15 19:06:55,776 Image Shape: (1, 1440, 3440, 4)
+2024-12-15 19:06:55,918 127.0.0.1 - - [15/Dec/2024 19:06:55] "[35m[1mPOST /generate_caption HTTP/1.1[0m" 500 -
+2024-12-15 19:10:03,338 127.0.0.1 - - [15/Dec/2024 19:10:03] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+2024-12-15 19:10:03,653 127.0.0.1 - - [15/Dec/2024 19:10:03] "[36mGET /upload?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-12-15 19:10:03,680 127.0.0.1 - - [15/Dec/2024 19:10:03] "[36mGET /upload?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-12-15 19:10:04,014 127.0.0.1 - - [15/Dec/2024 19:10:04] "GET /upload?__debugger__=yes&cmd=resource&f=console.png&s=Kzcmn0m4vvT04gmcw0sC HTTP/1.1" 200 -
+2024-12-15 19:10:04,301 127.0.0.1 - - [15/Dec/2024 19:10:04] "[36mGET /upload?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-12-15 19:10:45,647  * Detected change in '/lustre/fs0/scratch/krishp20/imagecaptionapp/src/app.py', reloading
+2024-12-15 19:10:47,441  * Restarting with stat
+2024-12-15 19:11:03,738  * Debugger is active!
+2024-12-15 19:11:03,739  * Debugger PIN: 198-581-754
+2024-12-15 19:11:09,296 127.0.0.1 - - [15/Dec/2024 19:11:09] "GET / HTTP/1.1" 200 -
+2024-12-15 19:11:44,861 127.0.0.1 - - [15/Dec/2024 19:11:44] "POST /upload HTTP/1.1" 200 -
+2024-12-15 19:11:45,172 127.0.0.1 - - [15/Dec/2024 19:11:45] "GET /static/uploads/Screenshot%202024-12-11%20at%203.41.24%20PM%20(2).png HTTP/1.1" 200 -
+2024-12-15 19:11:53,175 127.0.0.1 - - [15/Dec/2024 19:11:53] "[35m[1mPOST /generate_caption HTTP/1.1[0m" 500 -
+2024-12-15 19:14:44,352  * Detected change in '/lustre/fs0/scratch/krishp20/imagecaptionapp/src/app.py', reloading
+2024-12-15 19:14:47,048  * Restarting with stat
+2024-12-15 19:15:21,412  * Debugger is active!
+2024-12-15 19:15:21,412  * Debugger PIN: 198-581-754
+2024-12-15 19:15:27,031 127.0.0.1 - - [15/Dec/2024 19:15:27] "POST /upload HTTP/1.1" 200 -
+2024-12-15 19:15:27,375 127.0.0.1 - - [15/Dec/2024 19:15:27] "GET /static/uploads/Screenshot%202024-12-11%20at%203.41.24%20PM%20(2).png HTTP/1.1" 200 -
+2024-12-15 19:15:47,420 Image Shape: (1, 1440, 3440, 4)
+2024-12-15 19:15:56,866 Image Shape: (1, 1440, 3440, 4)
+2024-12-15 19:15:58,363 Image Shape: (1, 1440, 3440, 4)
+2024-12-15 19:16:06,979 Triton Inference Response Using Trained Model: 
+2024-12-15 19:16:06,981 the system of the operating system
+2024-12-15 19:16:06,982 127.0.0.1 - - [15/Dec/2024 19:16:06] "POST /generate_caption HTTP/1.1" 200 -
+2024-12-15 19:16:14,311 Triton Inference Response Using Trained Model: 
+2024-12-15 19:16:14,313 the system of the operating system
+2024-12-15 19:16:14,313 127.0.0.1 - - [15/Dec/2024 19:16:14] "POST /generate_caption HTTP/1.1" 200 -
+2024-12-15 19:16:15,726 Triton Inference Response Using Trained Model: 
+2024-12-15 19:16:15,726 the system of the operating system
+2024-12-15 19:16:15,728 127.0.0.1 - - [15/Dec/2024 19:16:15] "POST /generate_caption HTTP/1.1" 200 -
+2024-12-15 19:22:49,448 127.0.0.1 - - [15/Dec/2024 19:22:49] "GET / HTTP/1.1" 200 -
+2024-12-15 19:23:01,505 127.0.0.1 - - [15/Dec/2024 19:23:01] "POST /upload HTTP/1.1" 200 -
+2024-12-15 19:23:01,824 127.0.0.1 - - [15/Dec/2024 19:23:01] "GET /static/uploads/Screenshot%202024-12-11%20at%203.41.24%20PM%20(2).png HTTP/1.1" 200 -
+2024-12-15 19:23:16,186 Image Shape: (1, 1440, 3440, 4)
+2024-12-15 19:23:17,640 Triton Inference Response Using Trained Model: 
+2024-12-15 19:23:17,640 the system of the operating system
+2024-12-15 19:23:17,643 127.0.0.1 - - [15/Dec/2024 19:23:17] "POST /generate_caption HTTP/1.1" 200 -
+2024-12-15 19:25:15,164 127.0.0.1 - - [15/Dec/2024 19:25:15] "POST /upload HTTP/1.1" 200 -
+2024-12-15 19:25:15,459 127.0.0.1 - - [15/Dec/2024 19:25:15] "GET /static/uploads/yosemite_mist_falls.jpeg HTTP/1.1" 200 -
+2024-12-15 19:25:17,867 Image Shape: (1, 183, 275, 3)
+2024-12-15 19:25:24,879 Triton Inference Response Using Trained Model: 
+2024-12-15 19:25:24,880 the waterfall is a waterfall.
+2024-12-15 19:25:24,881 127.0.0.1 - - [15/Dec/2024 19:25:24] "POST /generate_caption HTTP/1.1" 200 -
+2024-12-15 19:39:01,492 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-15 19:39:01,496 [33mPress CTRL+C to quit[0m
+2024-12-15 19:39:01,507  * Restarting with stat
+2024-12-15 19:39:18,614  * Debugger is active!
+2024-12-15 19:39:18,615  * Debugger PIN: 198-581-754
+2024-12-15 19:39:24,166 127.0.0.1 - - [15/Dec/2024 19:39:24] "GET / HTTP/1.1" 200 -
+2024-12-15 19:39:32,417 127.0.0.1 - - [15/Dec/2024 19:39:32] "POST /upload HTTP/1.1" 200 -
+2024-12-15 19:39:32,723 127.0.0.1 - - [15/Dec/2024 19:39:32] "GET /static/uploads/yosemite_mist_falls.jpeg HTTP/1.1" 200 -
+2024-12-15 19:40:46,387 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-15 19:40:46,387 [33mPress CTRL+C to quit[0m
+2024-12-15 19:40:46,396  * Restarting with stat
+2024-12-15 19:41:03,214  * Debugger is active!
+2024-12-15 19:41:03,215  * Debugger PIN: 198-581-754
+2024-12-15 19:41:34,676 127.0.0.1 - - [15/Dec/2024 19:41:34] "GET / HTTP/1.1" 200 -
+2024-12-15 19:41:45,072 127.0.0.1 - - [15/Dec/2024 19:41:45] "POST /upload HTTP/1.1" 200 -
+2024-12-15 19:41:45,398 127.0.0.1 - - [15/Dec/2024 19:41:45] "GET /static/uploads/yosemite_mist_falls.jpeg HTTP/1.1" 200 -
+2024-12-15 19:43:58,432 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-15 19:43:58,436 [33mPress CTRL+C to quit[0m
+2024-12-15 19:43:58,446  * Restarting with stat
+2024-12-15 19:44:16,149  * Debugger is active!
+2024-12-15 19:44:16,149  * Debugger PIN: 198-581-754
+2024-12-15 19:44:31,901 127.0.0.1 - - [15/Dec/2024 19:44:31] "GET / HTTP/1.1" 200 -
+2024-12-15 19:44:38,062 127.0.0.1 - - [15/Dec/2024 19:44:38] "POST /upload HTTP/1.1" 200 -
+2024-12-15 19:44:38,388 127.0.0.1 - - [15/Dec/2024 19:44:38] "GET /static/uploads/yosemite_mist_falls.jpeg HTTP/1.1" 200 -
+2024-12-15 19:44:40,300 Image Shape: (1, 183, 275, 3)
+2024-12-15 19:44:43,068 Triton Inference Response Using Trained Model: 
+2024-12-15 19:44:43,069 the waterfall is a waterfall.
+2024-12-15 19:44:43,070 127.0.0.1 - - [15/Dec/2024 19:44:43] "POST /generate_caption HTTP/1.1" 200 -
+2024-12-15 19:45:29,470  * Detected change in '/lustre/fs0/scratch/krishp20/imagecaptionapp/src/predictor.py', reloading
+2024-12-15 19:45:29,993  * Restarting with stat
+2024-12-15 19:45:32,421  * Debugger is active!
+2024-12-15 19:45:32,421  * Debugger PIN: 198-581-754
+2024-12-15 19:48:43,396 127.0.0.1 - - [15/Dec/2024 19:48:43] "POST /upload HTTP/1.1" 200 -
+2024-12-15 19:48:43,712 127.0.0.1 - - [15/Dec/2024 19:48:43] "GET /static/uploads/000000000139.jpg HTTP/1.1" 200 -
+2024-12-15 19:48:46,910 Image Shape: (1, 426, 640, 3)
+2024-12-15 19:48:55,909 Triton Inference Response Using Trained Model: 
+2024-12-15 19:48:55,909 a wall on the side of a building
+2024-12-15 19:48:55,910 127.0.0.1 - - [15/Dec/2024 19:48:55] "POST /generate_caption HTTP/1.1" 200 -

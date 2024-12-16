@@ -1,0 +1,6 @@
+INFO:__main__:Image Shape: (1, 427, 640, 3)
+INFO:__main__:Image Shape: (1, 427, 640, 3)
+INFO:__main__:Triton Inference Response Using Trained Model: 
+INFO:__main__:[b'a snowboarder in the air']
+INFO:__main__:Local Base Model Inference Response: 
+INFO:__main__:a snowboarder in the air
