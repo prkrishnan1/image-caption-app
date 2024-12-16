@@ -1,0 +1,8 @@
+scikit-image
+pycocotools
+transformers
+torch
+datasets
+pandas
+tritonclient[http]
+flask

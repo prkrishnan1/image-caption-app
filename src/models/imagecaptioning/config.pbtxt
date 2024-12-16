@@ -1,0 +1,40 @@
+
+name:"imagecaptioning"
+# Triton backend to use
+backend: "python"
+
+max_batch_size : 32
+
+# Hugging face model path. Parameters must follow this
+# key/value structure
+#parameters: {
+#  key: "huggingface_model",
+#  value: {string_value: "microsoft/git-base"}
+#}
+
+# The maximum number of tokens to generate in response
+# to our input
+parameters: {
+  key: "max_output_length",
+  value: {string_value: "20"}
+}
+
+# Triton should expect as input an array (numpy version of Image (opened with PIL.Image))
+# named 'image'
+input [
+  {
+    name: "image"
+    data_type: TYPE_UINT8
+    dims: [-1, -1, -1]
+  }
+]
+
+# Triton should expect to respond with a single string
+# output of variable length named 'text_output'
+output [
+  {
+    name: "text_output"
+    data_type: TYPE_STRING
+    dims: [ -1 ]
+  }
+]
